@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Attendance | FortuMars</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="brand"><img src="https://fortumars.com/fortumarslogo.png"></div>
+  <nav>
+    <a href="index.html">Dashboard</a>
+    <a class="active">Attendance</a>
+    <a href="profile.html">Profile</a>
+    <a href="leave.html">Leave</a>
+    <a href="issues.html">Issues</a>
+  </nav>
+  <button class="theme-btn">🌓</button>
+</header>
+
+<div class="container">
+  <div class="card">
+  <h3>Monthly Attendance</h3>
+  <div id="calendar" class="calendar"></div>
+</div>
+
+  <div class="card">
+    <h2>Attendance History</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Clock In</th>
+          <th>Status</th>
+          <th>Clock Out</th>
+        </tr>
+      </thead>
+      <tbody id="attendanceTable"></tbody>
+    </table>
+  </div>
+</div>
+
+<footer>© 2026 FortuMars</footer>
+<script src="app.js"></script>
+</body>
+</html>

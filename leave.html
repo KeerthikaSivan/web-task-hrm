@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Leave | FortuMars</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="brand"><img src="https://fortumars.com/fortumarslogo.png"></div>
+  <nav>
+    <a href="index.html">Dashboard</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="profile.html">Profile</a>
+    <a class="active">Leave</a>
+    <a href="issues.html">Issues</a>
+  </nav>
+  <button class="theme-btn">🌓</button>
+</header>
+
+<div class="container">
+
+  <!-- APPLY LEAVE -->
+  <div class="card center">
+    <h2>Apply Leave</h2>
+    <input type="date" id="leaveDate">
+    <select id="leaveType">
+      <option>Sick Leave</option>
+      <option>Casual Leave</option>
+      <option>Emergency Leave</option>
+    </select>
+    <button onclick="applyLeave()">Submit Leave</button>
+  </div>
+
+  <!-- LEAVE PROGRESS -->
+  <div class="card">
+    <h3>Leave Status</h3>
+    <div class="progress-bar">
+      <div class="progress" id="leaveProgress"></div>
+    </div>
+    <p id="leaveStatus">No leave applied</p>
+  </div>
+
+</div>
+
+<footer>© 2026 FortuMars</footer>
+<script src="app.js"></script>
+</body>
+</html>

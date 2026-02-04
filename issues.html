@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Issues | FortuMars</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="brand"><img src="https://fortumars.com/fortumarslogo.png"></div>
+  <nav>
+    <a href="index.html">Dashboard</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="profile.html">Profile</a>
+    <a href="leave.html">Leave</a>
+    <a class="active">Issues</a>
+  </nav>
+  <button class="theme-btn">🌓</button>
+</header>
+
+<div class="container">
+
+  <!-- RAISE ISSUE -->
+  <div class="card center">
+    <h2>Raise an Issue</h2>
+    <input id="issueTitle" placeholder="Issue title">
+    <textarea id="issueDesc" placeholder="Describe the issue"></textarea>
+    <button onclick="raiseIssue()">Submit Issue</button>
+  </div>
+
+  <!-- ISSUE LIST -->
+  <div class="card">
+    <h3>My Issues</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Issue</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="issueTable"></tbody>
+    </table>
+  </div>
+
+</div>
+
+<footer>© 2026 FortuMars</footer>
+<script src="app.js"></script>
+</body>
+</html>

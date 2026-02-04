@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard | FortuMars</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="brand">
+    <img src="https://fortumars.com/fortumarslogo.png">
+  </div>
+  <nav>
+    <a class="active">Dashboard</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="profile.html">Profile</a>
+    <a href="leave.html">Leave</a>
+    <a href="issues.html">Issues</a>
+  </nav>
+  <button class="theme-btn">🌓</button>
+</header>
+
+<!-- TOP POPUP -->
+<div id="topPopup"></div>
+
+<section class="hero">
+  <div class="hero-slide active"
+   style="background-image:url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80')"></div>
+  <div class="hero-slide"
+   style="background-image:url('https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1920&q=80')"></div>
+</section>
+
+<div class="geo-badge" id="geo">📍 Detecting location…</div>
+
+<main class="container">
+  <div class="card center">
+
+   
+
+    <h1 id="clock">--:--:--</h1>
+
+    <div class="actions vertical">
+      <button onclick="clockIn()">Clock In</button>
+      <button onclick="takeBreak()">Break</button>
+      <button onclick="clockOut()">Clock Out</button>
+    </div>
+  </div>
+</main>
+
+<footer>© 2026 FortuMars</footer>
+<script src="app.js"></script>
+</body>
+</html>

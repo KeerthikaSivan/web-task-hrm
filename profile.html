@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Profile • FortuMars</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="brand">
+    <img src="https://fortumars.com/fortumarslogo.png" alt="FortuMars">
+  </div>
+  <nav>
+    <a href="index.html">Dashboard</a>
+    <a href="attendance.html">Attendance</a>
+    <a class="active">Profile</a>
+    <a href="leave.html">Leave</a>
+    <a href="issues.html">Issues</a>
+  </nav>
+  <button class="theme-btn">🌓</button>
+</header>
+
+<div id="topPopup"></div>
+
+<main>
+
+  <!-- EXISTING PROFILE (READ ONLY) -->
+  <div class="card profile-view">
+    <h2>My Profile</h2>
+
+    <p><strong>Name:Keerthika</strong> <span id="viewName"></span></p>
+    <p><strong>Role:Technical Intern</strong> <span id="viewRole"></span></p>
+    <p><strong>Email:Keerthika@fortumars.com</strong> <span id="viewEmail"></span></p>
+  </div>
+
+  <!-- EDIT PROFILE -->
+  <div class="card profile-edit">
+    <h3>Edit Profile</h3>
+
+    <label>Name</label>
+    <input id="name" type="text">
+
+    <label>Role</label>
+    <input id="role" type="text">
+
+    <label>Email</label>
+    <input id="email" type="email">
+
+    <button onclick="saveProfile()">Update Profile</button>
+  </div>
+
+  <!-- UPDATE HISTORY -->
+  <div class="card">
+    <h3>Profile Update History</h3>
+    <ul id="profileHistory" class="history"></ul>
+  </div>
+
+</main>
+
+<footer>
+© 2026 FortuMars — Empowering Work. Caring for People.
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
